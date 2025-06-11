@@ -17,7 +17,7 @@ export function OmikujiSection() {
     "小吉",
     "吉",
     "末吉",
-    "凶"
+    "超吉"
   ];
 
   // おみくじを引く関数
