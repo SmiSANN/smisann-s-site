@@ -1,5 +1,9 @@
 import React from "react";
 import { IconType } from "react-icons";
+import { FaUnity } from "react-icons/fa";
+import { SiKicad } from "react-icons/si";
+import { SiArduino } from "react-icons/si";
+import { FaRust } from "react-icons/fa";
 import { 
   FaGithub, 
   FaInstagram,
@@ -61,28 +65,25 @@ export interface PersonalInfo {
 // あなたのパーソナル情報をここで編集してください
 export const personalInfo: PersonalInfo = {
   // 基本情報
-  name: "あなたの名前",
+  name: "重根慧翼/すみさん",
   title: "大学1年生・駆け出しエンジニア",
   location: "Tokyo, Japan",
   avatarImage: "avatar.jpg", // 画像を追加したい場合はpublicフォルダに配置
-  initials: "YOUR", // アバター画像がない場合に表示されるイニシャル
+  initials: "K S", // アバター画像がない場合に表示されるイニシャル
   
   // About Me セクション
   about: {
     paragraphs: [
-      <>大学1年生の駆け出しエンジニアです。Web開発の世界に魅了され、日々新しい技術を学んでいます。</>,
-      <>現在は<strong className="text-foreground">React</strong>と<strong className="text-foreground">Next.js</strong>を中心としたモダンなフロントエンド技術を学習中。TypeScriptやTailwind CSSの良さを実感しながら、実際にプロジェクトを作って経験を積んでいます。</>,
-      <>「良いコードは読みやすいコード」を心がけ、Clean CodeやDesign Patternsを学習。将来的にはユーザーに価値を提供できるWebアプリケーションを開発したいと考えています。</>,
-      <>毎日のコミットとQiitaでの学習記録を継続し、プログラミングコミュニティの一員として成長していきたいです。</>
+      <>大学1年生の駆け出しエンジニアです。なんかいろいろな技術に触れています</>
     ]
   },
   
   // 技術スタック
   techStack: [
-    { name: "Next.js", icon: <SiNextdotjs className="w-3 h-3 mr-1" /> },
-    { name: "React", icon: <SiReact className="w-3 h-3 mr-1" /> },
-    { name: "TypeScript", icon: <SiTypescript className="w-3 h-3 mr-1" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="w-3 h-3 mr-1" /> },
+    { name: "Unity", icon: <FaUnity className="w-3 h-3 mr-1" /> },
+    { name: "KiCad", icon: <SiKicad className="w-3 h-3 mr-1" /> },
+    { name: "Arduino", icon: <SiArduino className="w-3 h-3 mr-1" /> },
+    { name: "Rust", icon: <FaRust className="w-3 h-3 mr-1" /> }
   ],
   
   // 趣味・興味
@@ -95,9 +96,9 @@ export const personalInfo: PersonalInfo = {
     },
     {
       title: "Development & Design",
-      description: "React/Next.jsでの個人プロジェクト、UI/UX設計、新技術の実験と検証",
+      description: "個人プロジェクト、UI/UX設計、新技術の実験と検証",
       icon: <FaCode className="h-5 w-5 text-primary" />,
-      badges: ["React", "UI/UX"]
+      badges: ["Rust", "UI/UX"]
     },
     {
       title: "Music & Entertainment",
@@ -110,17 +111,17 @@ export const personalInfo: PersonalInfo = {
   // 教育歴
   education: [
     {
-      period: "2024 — 現在",
-      school: "東京工科大学 コンピュータサイエンス学部",
-      description: "プログラミングやWeb開発について学習中。特にフロントエンド技術に興味を持って取り組んでいます。授業以外でも自主的に様々な技術を学び、実際にプロジェクトを作りながらスキルを向上させています。",
-      badges: ["コンピュータサイエンス学科", "人工知能専攻", "学部長賞"],
+      period: "2025 — 現在",
+      school: "東京工科大学 工学部",
+      description: "",
+      badges: ["電気電子工学科"],
       link: "https://example.com" // 学校のウェブサイトなど（オプション）
     },
     {
       period: "2021 — 2024",
-      school: "○○高等学校",
-      description: "○○部で活動していました。チームワークやリーダーシップを学び、問題解決能力を養いました。高校時代からコンピューターに興味を持ち始め、プログラミングの基礎を独学で学んでいました。",
-      badges: ["リーダーシップ", "チームワーク", "独学"]
+      school: "日本大学高等学校",
+      description: "",
+      badges: ["普通科"],
     }
   ],
   
@@ -128,28 +129,23 @@ export const personalInfo: PersonalInfo = {
   socialLinks: [
     {
       platform: "GitHub",
-      url: "https://github.com/yourusername", // あなたのGitHubのURLに変更してください
+      url: "https://github.com/smiSANN", // あなたのGitHubのURLに変更してください
       icon: <FaGithub className="size-6" />
     },
     {
       platform: "X (Twitter)",
-      url: "https://x.com/yourusername", // あなたのX(Twitter)のURLに変更してください
+      url: "https://x.com/Smi_sann", // あなたのX(Twitter)のURLに変更してください
       icon: <FaXTwitter className="size-6" />
     },
     {
       platform: "Instagram",
-      url: "https://instagram.com/yourusername", // あなたのInstagramのURLに変更してください
+      url: "https://www.instagram.com/smisann", // あなたのInstagramのURLに変更してください
       icon: <FaInstagram className="size-6" />
     },
     {
         platform: "Qiita",
-        url: "https://qiita.com/yourusername", // あなたのQiitaのURLに変更してください
+        url: "https://qiita.com/smisann", // あなたのQiitaのURLに変更してください
         icon: <SiQiita className="size-6" />
-    },
-    {
-        platform: "Zenn",
-        url: "https://zenn.dev/yourusername", // あなたのZennのURLに変更してください
-        icon: <SiZenn className="size-6" />
     }
   ]
 }; 
