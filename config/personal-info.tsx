@@ -115,7 +115,7 @@ export const personalInfo: PersonalInfo = {
       school: "東京工科大学 工学部",
       description: "",
       badges: ["電気電子工学科"],
-      link: "https://example.com" // 学校のウェブサイトなど（オプション）
+      link: "https://www.teu.ac.jp/gakubu/eng/el.html" // 学校のウェブサイトなど（オプション）
     },
     {
       period: "2021 — 2024",
