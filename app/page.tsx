@@ -4,6 +4,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { SimpleThemeToggle } from "@/components/simple-theme-toggle";
 import { Sidebar } from "@/components/layout/sidebar";
 import { AboutSection } from "@/components/sections/about-section";
+import { ProductsSection } from "@/components/sections/products-section";
+import { LinksSection } from "@/components/sections/links-section";
 import { HobbiesSection } from "@/components/sections/hobbies-section";
 import { EducationSection } from "@/components/sections/education-section";
 import { OmikujiSection } from "@/components/sections/omikuji-section";
@@ -33,6 +35,8 @@ export default function Home() {
         <main className="lg:w-[60%] lg:py-24 lg:pr-12 lg:pl-8 px-8 py-6">
           <div className="lg:max-w-none space-y-20">
             <AboutSection />
+            <ProductsSection />
+            <LinksSection />
             <HobbiesSection />
             <EducationSection />
             <OmikujiSection />
