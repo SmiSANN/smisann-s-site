@@ -96,7 +96,7 @@ export function Sidebar() {
       </div>
 
       {/* Links（ソーシャルリンク） */}
-      <div className="flex items-center justify-center lg:justify-start gap-5">
+      <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5">
         {personalInfo.socialLinks.map((social, index) => (
           <Button 
             key={index}

@@ -18,7 +18,10 @@ const defaultDescription = `${personalInfo.name}のポートフォリオサイ�
 
 export const metadata: Metadata = {
   title: `${personalInfo.name}`,
-  description: personalInfo.description || defaultDescription
+  description: personalInfo.description || defaultDescription,
+  icons: {
+    icon: "/new-favicon.ico",
+  },
 };
 
 export default function RootLayout({
