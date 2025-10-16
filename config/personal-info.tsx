@@ -1,20 +1,20 @@
 import React from "react";
-import { IconType } from "react-icons";
 import { FaUnity } from "react-icons/fa";
 import { SiKicad } from "react-icons/si";
 import { SiArduino } from "react-icons/si";
 import { FaRust } from "react-icons/fa";
-import { 
-  FaGithub, 
+import {
+  FaGithub,
   FaInstagram,
   FaBook,
   FaCode,
   FaMusic,
-  FaMapMarkerAlt,
+  FaAmazon,
+  FaBox,
+  FaShoppingBag,
 } from "react-icons/fa";
-import { SiQiita, SiZenn } from "react-icons/si";
+import { SiQiita, SiMisskey } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
-import { SiNextdotjs, SiReact, SiTypescript, SiTailwindcss } from "react-icons/si";
 
 // パーソナル情報の型定義
 export interface PersonalInfo {
@@ -25,18 +25,37 @@ export interface PersonalInfo {
   avatarImage?: string;
   initials: string;
   description?: string;
-  
+
   // About Me
   about: {
     paragraphs: React.ReactNode[];
   };
-  
+
   // Tech Stack
   techStack: {
     name: string;
     icon: React.ReactNode;
   }[];
-  
+
+  // Products
+  products: {
+    name: string;
+    description: string;
+    url: string;
+  }[];
+
+  // Links
+  links: {
+    name: string;
+    url: string;
+  }[];
+
+  // Support Links
+  supportLinks: {
+    name: string;
+    url: string;
+  }[];
+
   // 趣味・興味
   hobbies: {
     title: string;
@@ -44,7 +63,7 @@ export interface PersonalInfo {
     icon: React.ReactNode;
     badges: string[];
   }[];
-  
+
   // 教育歴
   education: {
     period: string;
@@ -53,7 +72,7 @@ export interface PersonalInfo {
     badges: string[];
     link?: string;
   }[];
-  
+
   // ソーシャルリンク
   socialLinks: {
     platform: string;
@@ -125,27 +144,68 @@ export const personalInfo: PersonalInfo = {
     }
   ],
   
+  // Products
+  products: [
+    {
+      name: "UnityEditorTracker",
+      description: "Unityの作業時間を記録し、Discordと連携するエディタ拡張。",
+      url: "https://smi-shop.booth.pm/items/6797985",
+    },
+    {
+      name: "Image to VRC",
+      description: "画像をURLTexture用に変換するツール。",
+      url: "https://smisann.fanbox.cc/posts/8882303",
+    },
+  ],
+
+  // Links
+  links: [
+    { name: "VRChat", url: "https://vrchat.com/home/user/usr_56b6c332-2ffd-4f49-82f3-17bf9f8eb798" },
+    { name: "Resonite", url: "https://resonite.com/" },
+    { name: "Twitter", url: "https://twitter.com/Smi_sann" },
+    { name: "Instagram", url: "https://www.instagram.com/smisann/" },
+    { name: "Misskey", url: "https://misskey.resonite.love/@smisann" },
+    { name: "Discord", url: "https://discord.com/" },
+    { name: "Booth", url: "https://smi-shop.booth.pm/" },
+  ],
+
+  // Support Links
+  supportLinks: [
+    { name: "Amazon Wishlist", url: "https://www.amazon.co.jp/hz/wishlist/ls/1QYBVUXTLOYZQ?ref_=wl_share" },
+    { name: "Fanbox", url: "https://smisann.fanbox.cc/" },
+  ],
+
   // ソーシャルリンク
   socialLinks: [
     {
       platform: "GitHub",
-      url: "https://github.com/smiSANN", // あなたのGitHubのURLに変更してください
+      url: "https://github.com/smiSANN",
       icon: <FaGithub className="size-6" />
     },
     {
       platform: "X (Twitter)",
-      url: "https://x.com/Smi_sann", // あなたのX(Twitter)のURLに変更してください
+      url: "https://x.com/Smi_sann",
       icon: <FaXTwitter className="size-6" />
     },
     {
       platform: "Instagram",
-      url: "https://www.instagram.com/smisann", // あなたのInstagramのURLに変更してください
+      url: "https://www.instagram.com/smisann",
       icon: <FaInstagram className="size-6" />
     },
     {
-        platform: "Qiita",
-        url: "https://qiita.com/smisann", // あなたのQiitaのURLに変更してください
-        icon: <SiQiita className="size-6" />
+      platform: "Qiita",
+      url: "https://qiita.com/smisann",
+      icon: <SiQiita className="size-6" />
+    },
+    {
+      platform: "Misskey",
+      url: "https://misskey.resonite.love/@smisann",
+      icon: <SiMisskey className="size-6" />
+    },
+    {
+      platform: "Booth",
+      url: "https://smi-shop.booth.pm/",
+      icon: <FaShoppingBag className="size-6" />
     }
   ]
 }; 
