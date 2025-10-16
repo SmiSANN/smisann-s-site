@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: `${personalInfo.name}`,
   description: personalInfo.description || defaultDescription,
   icons: {
-    icon: "/new-favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
