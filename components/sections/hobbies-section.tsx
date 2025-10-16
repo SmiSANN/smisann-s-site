@@ -9,7 +9,6 @@ export function HobbiesSection() {
           Hobbies
         </h2>
       </div>
-      
       <div className="space-y-8">
         <h2 className="text-2xl font-bold tracking-tight hidden lg:block">My Interests</h2>
         <div className="grid gap-6">
@@ -40,4 +39,4 @@ export function HobbiesSection() {
       </div>
     </section>
   );
-} 
+}
