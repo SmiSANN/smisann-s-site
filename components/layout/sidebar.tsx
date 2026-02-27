@@ -82,15 +82,6 @@ export function Sidebar() {
                 Education
               </span>
             </a>
-            <a 
-              href="#omikuji" 
-              className="group flex items-center py-2"
-            >
-              <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
-              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
-                Omikuji
-              </span>
-            </a>
           </div>
         </nav>
       </div>

@@ -14,7 +14,7 @@ import {
   FaBox,
   FaShoppingBag,
 } from "react-icons/fa";
-import { SiQiita, SiMisskey } from "react-icons/si";
+import { SiMisskey } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 // パーソナル情報の型定義
@@ -186,11 +186,6 @@ export const personalInfo: PersonalInfo = {
       platform: "Instagram",
       url: "https://www.instagram.com/smisann",
       icon: <FaInstagram className="size-6" />
-    },
-    {
-      platform: "Qiita",
-      url: "https://qiita.com/smisann",
-      icon: <SiQiita className="size-6" />
     },
     {
       platform: "Misskey",

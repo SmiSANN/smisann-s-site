@@ -8,7 +8,6 @@ import { ProductsSection } from "@/components/sections/products-section";
 import { HobbiesSection } from "@/components/sections/hobbies-section";
 import { EducationSection } from "@/components/sections/education-section";
 import { SupportSection } from "@/components/sections/support-section";
-import { OmikujiSection } from "@/components/sections/omikuji-section";
 import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
@@ -39,7 +38,6 @@ export default function Home() {
             <HobbiesSection />
             <EducationSection />
             <SupportSection />
-            <OmikujiSection />
             <Footer />
           </div>
         </main>
