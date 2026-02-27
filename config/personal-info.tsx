@@ -8,12 +8,10 @@ import {
   FaInstagram,
   FaBook,
   FaCode,
-  FaMusic,
   FaMicrochip,
-  FaAmazon,
-  FaBox,
   FaShoppingBag,
 } from "react-icons/fa";
+
 import { SiMisskey } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -42,12 +40,6 @@ export interface PersonalInfo {
   products: {
     name: string;
     description: string;
-    url: string;
-  }[];
-
-  // Support Links
-  supportLinks: {
-    name: string;
     url: string;
   }[];
 
@@ -88,7 +80,8 @@ export const personalInfo: PersonalInfo = {
   // About Me セクション
   about: {
     paragraphs: [
-      <>大学1年生の駆け出しエンジニアです。なんかいろいろな技術に触れています</>
+      <>ハードウェアからソフトウェアまで、気になった技術には何でも手を動かして試すのが好きです。KiCadで基板を設計したり、Rustで何かを書いたり、UnityでVRChatのギミックを作ったり。プログラミングと電子工作の境界がないところが一番楽しいと感じています。</>,
+      <>学んだことやつまずいたことはブログやLT会でアウトプットするようにしています。インプットだけで終わらせず、自分の言葉で整理して発信することを大切にしています。</>
     ]
   },
   
@@ -104,7 +97,7 @@ export const personalInfo: PersonalInfo = {
   hobbies: [
     {
       title: "Learning & Reading",
-      description: "技術書やPodcastでのインプット、QiitaやZennでのアウトプットを継続",
+      description: "技術書やPodcastでのインプット、ブログやLT会でのアウトプットを継続",
       icon: <FaBook className="h-5 w-5 text-primary" />,
       badges: ["Clean Code", "Podcast"]
     },
@@ -120,12 +113,6 @@ export const personalInfo: PersonalInfo = {
       icon: <FaMicrochip className="h-5 w-5 text-primary" />,
       badges: ["PIC", "TinyAVR", "Arduino", "KiCad"]
     },
-    {
-      title: "Music & Entertainment",
-      description: "コーディング用BGM、Webゲームでの参考収集、技術系コンテンツの視聴",
-      icon: <FaMusic className="h-5 w-5 text-primary" />,
-      badges: ["Lo-Fi", "Gaming"]
-    }
   ],
   
   // 教育歴
@@ -162,12 +149,6 @@ export const personalInfo: PersonalInfo = {
       description: "VRChatワールド内でMIDIコントローラーの入力を受け取り、Animatorのトリガーを発火させるギミック。ライブパフォーマンスや照明制御などに活用できる。",
       url: "https://github.com/SmiSANN/MidiAnimatorDriver",
     },
-  ],
-
-  // Support Links
-  supportLinks: [
-    { name: "Amazon Wishlist", url: "https://www.amazon.co.jp/hz/wishlist/ls/1QYBVUXTLOYZQ?ref_=wl_share" },
-    { name: "Fanbox", url: "https://smisann.fanbox.cc/" },
   ],
 
   // ソーシャルリンク

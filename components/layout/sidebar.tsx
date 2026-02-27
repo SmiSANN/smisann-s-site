@@ -65,6 +65,15 @@ export function Sidebar() {
               </span>
             </a>
             <a 
+              href="#products" 
+              className="group flex items-center py-2"
+            >
+              <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
+              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
+                Products
+              </span>
+            </a>
+            <a 
               href="#hobbies" 
               className="group flex items-center py-2"
             >
@@ -74,12 +83,21 @@ export function Sidebar() {
               </span>
             </a>
             <a 
+              href="#blog" 
+              className="group flex items-center py-2"
+            >
+              <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
+              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
+                Blog
+              </span>
+            </a>
+            <a 
               href="#education" 
               className="group flex items-center py-2"
             >
               <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
               <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
-                Education
+                Blog
               </span>
             </a>
           </div>
