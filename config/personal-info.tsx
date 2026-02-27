@@ -9,6 +9,7 @@ import {
   FaBook,
   FaCode,
   FaMusic,
+  FaMicrochip,
   FaAmazon,
   FaBox,
   FaShoppingBag,
@@ -109,9 +110,15 @@ export const personalInfo: PersonalInfo = {
     },
     {
       title: "Development & Design",
-      description: "個人プロジェクト、UI/UX設計、新技術の実験と検証",
+      description: "個人プロジェクト、UI/UX設計、新技術の実験と検証。C#/.NETやRustを使ったアプリ開発、Unityを使ったVRChatギミック制作など",
       icon: <FaCode className="h-5 w-5 text-primary" />,
-      badges: ["Rust", "UI/UX"]
+      badges: ["C#", ".NET", "Unity", "Rust", "UI/UX"]
+    },
+    {
+      title: "Electronics & Hardware",
+      description: "マイコンを使った組み込み開発と電子工作。PICやTinyAVR（ATtiny10など）を使った小型デバイス制作、KiCadを使った基板設計",
+      icon: <FaMicrochip className="h-5 w-5 text-primary" />,
+      badges: ["PIC", "TinyAVR", "Arduino", "KiCad"]
     },
     {
       title: "Music & Entertainment",
@@ -149,6 +156,11 @@ export const personalInfo: PersonalInfo = {
       name: "Image to VRC",
       description: "画像をURLTexture用に変換するツール。",
       url: "https://smisann.fanbox.cc/posts/8882303",
+    },
+    {
+      name: "MidiAnimatorDriver",
+      description: "VRChatワールド内でMIDIコントローラーの入力を受け取り、Animatorのトリガーを発火させるギミック。ライブパフォーマンスや照明制御などに活用できる。",
+      url: "https://github.com/SmiSANN/MidiAnimatorDriver",
     },
   ],
 
