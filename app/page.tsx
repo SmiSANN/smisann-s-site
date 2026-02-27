@@ -5,7 +5,6 @@ import { SimpleThemeToggle } from "@/components/simple-theme-toggle";
 import { Sidebar } from "@/components/layout/sidebar";
 import { AboutSection } from "@/components/sections/about-section";
 import { ProductsSection } from "@/components/sections/products-section";
-import { LinksSection } from "@/components/sections/links-section";
 import { HobbiesSection } from "@/components/sections/hobbies-section";
 import { EducationSection } from "@/components/sections/education-section";
 import { SupportSection } from "@/components/sections/support-section";
@@ -37,7 +36,6 @@ export default function Home() {
           <div className="lg:max-w-none space-y-20">
             <AboutSection />
             <ProductsSection />
-            <LinksSection />
             <HobbiesSection />
             <EducationSection />
             <SupportSection />

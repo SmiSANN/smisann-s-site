@@ -45,12 +45,6 @@ export interface PersonalInfo {
     url: string;
   }[];
 
-  // Links
-  links: {
-    name: string;
-    url: string;
-  }[];
-
   // Support Links
   supportLinks: {
     name: string;
@@ -168,17 +162,6 @@ export const personalInfo: PersonalInfo = {
       description: "VRChatワールド内でMIDIコントローラーの入力を受け取り、Animatorのトリガーを発火させるギミック。ライブパフォーマンスや照明制御などに活用できる。",
       url: "https://github.com/SmiSANN/MidiAnimatorDriver",
     },
-  ],
-
-  // Links
-  links: [
-    { name: "VRChat", url: "https://vrchat.com/home/user/usr_56b6c332-2ffd-4f49-82f3-17bf9f8eb798" },
-    { name: "Resonite", url: "https://resonite.com/" },
-    { name: "Twitter", url: "https://twitter.com/Smi_sann" },
-    { name: "Instagram", url: "https://www.instagram.com/smisann/" },
-    { name: "Misskey", url: "https://misskey.resonite.love/@smisann" },
-    { name: "Discord", url: "https://discord.com/" },
-    { name: "Booth", url: "https://smi-shop.booth.pm/" },
   ],
 
   // Support Links
