@@ -51,6 +51,12 @@ export interface PersonalInfo {
     url: string;
   }[];
 
+  // Support Links
+  supportLinks: {
+    name: string;
+    url: string;
+  }[];
+
   // 趣味・興味
   hobbies: {
     title: string;
@@ -171,10 +177,14 @@ export const personalInfo: PersonalInfo = {
     { name: "Twitter", url: "https://twitter.com/Smi_sann" },
     { name: "Instagram", url: "https://www.instagram.com/smisann/" },
     { name: "Misskey", url: "https://misskey.resonite.love/@smisann" },
-    { name: "Fanbox", url: "https://smisann.fanbox.cc/" },
     { name: "Discord", url: "https://discord.com/" },
-    { name: "Amazon Wishlist", url: "https://www.amazon.co.jp/hz/wishlist/ls/1QYBVUXTLOYZQ?ref_=wl_share" },
     { name: "Booth", url: "https://smi-shop.booth.pm/" },
+  ],
+
+  // Support Links
+  supportLinks: [
+    { name: "Amazon Wishlist", url: "https://www.amazon.co.jp/hz/wishlist/ls/1QYBVUXTLOYZQ?ref_=wl_share" },
+    { name: "Fanbox", url: "https://smisann.fanbox.cc/" },
   ],
 
   // ソーシャルリンク
@@ -205,19 +215,9 @@ export const personalInfo: PersonalInfo = {
       icon: <SiMisskey className="size-6" />
     },
     {
-      platform: "Fanbox",
-      url: "https://smisann.fanbox.cc/",
-      icon: <FaBox className="size-6" />
-    },
-    {
       platform: "Booth",
       url: "https://smi-shop.booth.pm/",
       icon: <FaShoppingBag className="size-6" />
-    },
-    {
-      platform: "Amazon",
-      url: "https://www.amazon.co.jp/hz/wishlist/ls/1QYBVUXTLOYZQ?ref_=wl_share",
-      icon: <FaAmazon className="size-6" />
     }
   ]
 }; 
