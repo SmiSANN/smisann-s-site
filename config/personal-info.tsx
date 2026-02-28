@@ -147,7 +147,7 @@ export const personalInfo: PersonalInfo = {
     {
       name: "MidiAnimatorDriver",
       description: "VRChatワールド内でMIDIコントローラーの入力を受け取り、Animatorのトリガーを発火させるギミック。ライブパフォーマンスや照明制御などに活用できる。",
-      url: "https://github.com/SmiSANN/MidiAnimatorDriver",
+      url: "https://blog.smisann.net/posts/2026/midi-animator-driver",
     },
   ],
 
