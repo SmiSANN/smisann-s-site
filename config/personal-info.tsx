@@ -142,7 +142,7 @@ export const personalInfo: PersonalInfo = {
     {
       name: "Image to VRC",
       description: "画像をURLTexture用に変換するツール。",
-      url: "https://smisann.fanbox.cc/posts/8882303",
+      url: "https://blog.smisann.net/posts/2026/imagetovrc",
     },
     {
       name: "MidiAnimatorDriver",
