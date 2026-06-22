@@ -6,7 +6,6 @@ import { FaRust } from "react-icons/fa";
 import {
   FaGithub,
   FaInstagram,
-  FaBook,
   FaCode,
   FaMicrochip,
   FaShoppingBag,
@@ -72,7 +71,7 @@ export interface PersonalInfo {
 export const personalInfo: PersonalInfo = {
   // 基本情報
   name: "重根慧翼/すみさん",
-  title: "大学1年生・駆け出しエンジニア",
+  title: "大学2年生・ハードウェア/ソフトウェアを学ぶ学生",
   location: "Tokyo, Japan",
   avatarImage: "avatar.jpg", // 画像を追加したい場合はpublicフォルダに配置
   initials: "K S", // アバター画像がない場合に表示されるイニシャル
@@ -80,38 +79,41 @@ export const personalInfo: PersonalInfo = {
   // About Me セクション
   about: {
     paragraphs: [
-      <>ハードウェアからソフトウェアまで、気になった技術には何でも手を動かして試すのが好きです。KiCadで基板を設計したり、Rustで何かを書いたり、UnityでVRChatのギミックを作ったり。プログラミングと電子工作の境界がないところが一番楽しいと感じています。</>,
-      <>学んだことやつまずいたことはブログやLT会でアウトプットするようにしています。インプットだけで終わらせず、自分の言葉で整理して発信することを大切にしています。</>
+      <>東京工科大学で電気電子工学を学びながら、ハードウェアとソフトウェアの両方に触れています。Arduino・ESP32を使った自作デバイスの試作、KiCadでの基板設計、Unityでの簡単なロジックやエディタツール開発など、作りたいものに合わせて必要な技術を学んでいます。</>,
+      <>Rust/C++、C#、Docker、GitHub Actionsなども個人開発の中で少しずつ扱っています。学んだことやつまずいたことはブログやLT会でアウトプットし、自分の言葉で整理して残すことを大切にしています。</>
     ]
   },
   
   // 技術スタック
   techStack: [
+    { name: "Rust / C++", icon: <FaRust className="w-3 h-3 mr-1" /> },
+    { name: "C#", icon: <FaCode className="w-3 h-3 mr-1" /> },
     { name: "Unity", icon: <FaUnity className="w-3 h-3 mr-1" /> },
+    { name: "Arduino / ESP32", icon: <SiArduino className="w-3 h-3 mr-1" /> },
     { name: "KiCad", icon: <SiKicad className="w-3 h-3 mr-1" /> },
-    { name: "Arduino", icon: <SiArduino className="w-3 h-3 mr-1" /> },
-    { name: "Rust", icon: <FaRust className="w-3 h-3 mr-1" /> }
+    { name: "Docker", icon: <FaCode className="w-3 h-3 mr-1" /> },
+    { name: "GitHub Actions", icon: <FaGithub className="w-3 h-3 mr-1" /> },
   ],
   
   // 趣味・興味
   hobbies: [
     {
-      title: "Learning & Reading",
-      description: "技術書やPodcastでのインプット、ブログやLT会でのアウトプットを継続",
-      icon: <FaBook className="h-5 w-5 text-primary" />,
-      badges: ["Clean Code", "Podcast"]
+      title: "Software Development",
+      description: "Rust/C++、C#、Docker、GitHub Actionsなどを個人開発で使用。C#ではUnityの簡単なエディタツール開発、GitHub Actionsでは自作アプリのCI構築経験があります。",
+      icon: <FaCode className="h-5 w-5 text-primary" />,
+      badges: ["Rust", "C++", "C#", "Docker", "GitHub Actions"]
     },
     {
-      title: "Development & Design",
-      description: "個人プロジェクト、UI/UX設計、新技術の実験と検証。C#/.NETやRustを使ったアプリ開発、Unityを使ったVRChatギミック制作など",
-      icon: <FaCode className="h-5 w-5 text-primary" />,
-      badges: ["C#", ".NET", "Unity", "Rust", "UI/UX"]
+      title: "Unity & VRChat",
+      description: "Unityを使った簡単なロジックやエディタツールの実装、VRChat向けギミック制作などに取り組んでいます。",
+      icon: <FaUnity className="h-5 w-5 text-primary" />,
+      badges: ["Unity", "C#", "VRChat"]
     },
     {
       title: "Electronics & Hardware",
-      description: "マイコンを使った組み込み開発と電子工作。PICやTinyAVR（ATtiny10など）を使った小型デバイス制作、KiCadを使った基板設計",
+      description: "Arduino・ESP32を使ったキーボードや触覚デバイスなどの試作、KiCadを使った小型化や量産性を意識した基板設計に取り組んでいます。",
       icon: <FaMicrochip className="h-5 w-5 text-primary" />,
-      badges: ["PIC", "TinyAVR", "Arduino", "KiCad"]
+      badges: ["Arduino", "ESP32", "KiCad"]
     },
   ],
   
