@@ -11,6 +11,9 @@ export function HobbiesSection() {
       </div>
       <div className="space-y-8">
         <h2 className="text-2xl font-bold tracking-tight hidden lg:block">My Interests</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          基本的にいろいろなものを面白がる性分で、興味の幅は広めです。中でも特に手を動かしているのが、次の3つの領域です。
+        </p>
         <div className="grid gap-6">
           {personalInfo.hobbies.map((hobby, index) => (
             <div key={index} className="group relative overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all">

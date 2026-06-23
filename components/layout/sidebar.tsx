@@ -64,22 +64,22 @@ export function Sidebar() {
                 About
               </span>
             </a>
-            <a 
-              href="#products" 
-              className="group flex items-center py-2"
-            >
-              <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
-              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
-                Products
-              </span>
-            </a>
-            <a 
-              href="#hobbies" 
+            <a
+              href="#hobbies"
               className="group flex items-center py-2"
             >
               <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
               <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
                 Hobbies
+              </span>
+            </a>
+            <a
+              href="#products"
+              className="group flex items-center py-2"
+            >
+              <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
+              <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
+                Products
               </span>
             </a>
             <a 
@@ -91,13 +91,13 @@ export function Sidebar() {
                 Blog
               </span>
             </a>
-            <a 
-              href="#education" 
+            <a
+              href="#education"
               className="group flex items-center py-2"
             >
               <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus-visible:w-16 group-focus-visible:bg-foreground group-active:w-20 group-active:bg-primary motion-reduce:transition-none"></span>
               <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus-visible:text-foreground group-active:text-primary">
-                Blog
+                Education
               </span>
             </a>
           </div>

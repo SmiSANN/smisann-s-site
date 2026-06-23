@@ -1,5 +1,18 @@
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaArrowUpRightFromSquare, FaRegFileLines } from "react-icons/fa6";
 import { FaPenNib } from "react-icons/fa";
+
+const featuredPosts = [
+  {
+    title: "作ったものまとめ Part1",
+    description: "電子工作・VRデバイス・分解解析・展示など、これまで雑多に作ってきたものを写真で一覧できるページ。",
+    url: "https://blog.smisann.net/posts/2026/made-things-part1",
+  },
+  {
+    title: "ATtiny10の環境構築とLチカまで",
+    description: "サークルのLT会で発表した内容をベースにしたマイコン入門（Advent Calendar 2025）。",
+    url: "https://blog.smisann.net/posts/2025/attiny10-setup",
+  },
+];
 
 export function BlogSection() {
   return (
@@ -13,7 +26,7 @@ export function BlogSection() {
       <div className="space-y-6">
         <h2 className="text-2xl font-bold tracking-tight hidden lg:block">Blog</h2>
         <p className="text-muted-foreground leading-relaxed">
-          学んだことや試したことを記事としてアウトプットしています。技術的なメモから実験記録まで、気づきをそのまま書いています。
+          手を動かして作ってきたものの記録と、技術的なメモをまとめています。雑多に作ったものの一覧から、マイコン入門のような踏み込んだ解説まで。完成物だけでなく「どう考えて作ったか」も残す場です。
         </p>
 
         <a
@@ -32,13 +45,43 @@ export function BlogSection() {
                   blog.smisann.net
                 </p>
                 <p className="text-sm text-muted-foreground mt-0.5">
-                  個人ブログ — 技術 / 電子工作 / 日々の発見
+                  作ったもの / 技術解説 / 電子工作
                 </p>
               </div>
             </div>
             <FaArrowUpRightFromSquare className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary mt-1" />
           </div>
         </a>
+
+        <div className="space-y-3">
+          <p className="text-sm font-semibold text-muted-foreground">ピックアップ</p>
+          {featuredPosts.map((post) => (
+            <a
+              key={post.url}
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary/60 hover:bg-card/80 hover:shadow-md"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+                    <FaRegFileLines className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {post.title}
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-0.5 leading-relaxed">
+                      {post.description}
+                    </p>
+                  </div>
+                </div>
+                <FaArrowUpRightFromSquare className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary mt-1" />
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

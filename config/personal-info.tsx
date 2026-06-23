@@ -2,7 +2,9 @@ import React from "react";
 import { FaUnity } from "react-icons/fa";
 import { SiKicad } from "react-icons/si";
 import { SiArduino } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+import { FaRust, FaDocker } from "react-icons/fa";
 import {
   FaGithub,
   FaInstagram,
@@ -40,6 +42,9 @@ export interface PersonalInfo {
     name: string;
     description: string;
     url: string;
+    tags?: string[];
+    repoUrl?: string;
+    featured?: boolean;
   }[];
 
   // 趣味・興味
@@ -79,41 +84,43 @@ export const personalInfo: PersonalInfo = {
   // About Me セクション
   about: {
     paragraphs: [
-      <>東京工科大学で電気電子工学を学びながら、ハードウェアとソフトウェアの両方に触れています。Arduino・ESP32を使った自作デバイスの試作、KiCadでの基板設計、Unityでの簡単なロジックやエディタツール開発など、作りたいものに合わせて必要な技術を学んでいます。</>,
-      <>Rust/C++、C#、Docker、GitHub Actionsなども個人開発の中で少しずつ扱っています。学んだことやつまずいたことはブログやLT会でアウトプットし、自分の言葉で整理して残すことを大切にしています。</>
+      <>東京工科大学で電気電子工学を学びながら、ハードウェアとソフトウェアの両方に触れています。Arduino・ESP32を使った自作デバイスの試作、KiCadでの基板設計、Unityでの簡単なロジックやエディタツール開発に加え、Cloudflare Workers / Pages を使ったWeb・サーバーサイドにも少しずつ触れています。作りたいものに合わせて、ハード・ソフト・Webを横断しながら必要な技術を学んでいます。</>,
+      <>Rust/C++、C#、Docker、GitHub Actionsなども個人開発の中で少しずつ扱っています。面白いものは人にも入門されるべきだと思っていて、学んだことやつまずいたことをブログやLT会でアウトプットしたり、作ったものは基本的にすべてオープンソースで公開しています。</>,
+      <>「すべての技術者は、技術を知らない人にこそ技術を提供する」——これを行動理念に、いわば&quot;他人駆動開発&quot;を続けています。欲しいと言われたものは作るし、欲しいと聞こえてきたものも作る。そのために必要な知識は「面白そう」という好奇心のまま自分で掘り下げていて、その積み重ねがハードからWebまでのフルスタックな引き出しになっています。</>
     ]
   },
   
   // 技術スタック
   techStack: [
-    { name: "Rust / C++", icon: <FaRust className="w-3 h-3 mr-1" /> },
-    { name: "C#", icon: <FaCode className="w-3 h-3 mr-1" /> },
+    { name: "Rust", icon: <FaRust className="w-3 h-3 mr-1" /> },
+    { name: "C++", icon: <SiCplusplus className="w-3 h-3 mr-1" /> },
+    { name: "C#", icon: <TbBrandCSharp className="w-3 h-3 mr-1" /> },
     { name: "Unity", icon: <FaUnity className="w-3 h-3 mr-1" /> },
     { name: "Arduino / ESP32", icon: <SiArduino className="w-3 h-3 mr-1" /> },
     { name: "KiCad", icon: <SiKicad className="w-3 h-3 mr-1" /> },
-    { name: "Docker", icon: <FaCode className="w-3 h-3 mr-1" /> },
+    { name: "Docker", icon: <FaDocker className="w-3 h-3 mr-1" /> },
     { name: "GitHub Actions", icon: <FaGithub className="w-3 h-3 mr-1" /> },
   ],
   
   // 趣味・興味
   hobbies: [
     {
-      title: "Software Development",
-      description: "Rust/C++、C#、Docker、GitHub Actionsなどを個人開発で使用。C#ではUnityの簡単なエディタツール開発、GitHub Actionsでは自作アプリのCI構築経験があります。",
-      icon: <FaCode className="h-5 w-5 text-primary" />,
-      badges: ["Rust", "C++", "C#", "Docker", "GitHub Actions"]
+      title: "Electronics & Hardware",
+      description: "Arduino・ESP32を使ったキーボードや触覚デバイスなどの製作、KiCadでの基板設計に取り組んでいます。今後はノイズ耐性・高速通信・量産性を意識した、より実践的な基板設計を身につけていきたいと考えています。",
+      icon: <FaMicrochip className="h-5 w-5 text-primary" />,
+      badges: ["Arduino", "ESP32", "KiCad"]
     },
     {
       title: "Unity & VRChat",
-      description: "Unityを使った簡単なロジックやエディタツールの実装、VRChat向けギミック制作などに取り組んでいます。",
+      description: "Unityでのロジックやエディタ拡張の実装、VRChat向けギミック制作などに取り組んでいます。",
       icon: <FaUnity className="h-5 w-5 text-primary" />,
-      badges: ["Unity", "C#", "VRChat"]
+      badges: ["Unity", "VRChat"]
     },
     {
-      title: "Electronics & Hardware",
-      description: "Arduino・ESP32を使ったキーボードや触覚デバイスなどの試作、KiCadを使った小型化や量産性を意識した基板設計に取り組んでいます。",
-      icon: <FaMicrochip className="h-5 w-5 text-primary" />,
-      badges: ["Arduino", "ESP32", "KiCad"]
+      title: "Software & Web",
+      description: "個人開発全般。GitHub ActionsやDockerでのCI構築や、Cloudflareを使ったサーバーレスなWeb・バックエンドにも挑戦しています。",
+      icon: <FaCode className="h-5 w-5 text-primary" />,
+      badges: ["Cloudflare", "Docker", "GitHub Actions"]
     },
   ],
   
@@ -137,19 +144,32 @@ export const personalInfo: PersonalInfo = {
   // Products
   products: [
     {
+      name: "MnemoVR",
+      description:
+        "VRChatのスクリーンショットをワールド・撮影日時ごとに自動整理するデスクトップアプリ。ローカルのRustバックエンドでメタデータを解析し、カレンダー/ワールド/お気に入りなど複数ビューで思い出を振り返れる。Discordログインでワールドランキングの共有にも対応。Tauri + React + Rust + Cloudflare Workersのフルスタック個人開発。",
+      url: "https://github.com/SmiSANN/MnemoVR",
+      tags: ["Tauri", "Cloudflare Workers", "SQLite", "VRChat"],
+      featured: true,
+    },
+    {
       name: "UnityEditorTracker",
       description: "Unityの作業時間を記録し、Discordと連携するエディタ拡張。",
       url: "https://smi-shop.booth.pm/items/6797985",
+      tags: ["Unity", "Editor拡張", "Discord"],
     },
     {
       name: "Image to VRC",
-      description: "画像をURLTexture用に変換するツール。",
+      description: "画像をVRChatのURLTexture用URLに変換するWebツール。アップロード・URL変換・プロキシ生成に対応し、サーバーレスで画像のリホストと配信を行う。",
       url: "https://blog.smisann.net/posts/2026/imagetovrc",
+      repoUrl: "https://github.com/SmiSANN/image2vrc",
+      tags: ["Web App", "Cloudflare Pages", "R2"],
     },
     {
       name: "MidiAnimatorDriver",
       description: "VRChatワールド内でMIDIコントローラーの入力を受け取り、Animatorのトリガーを発火させるギミック。ライブパフォーマンスや照明制御などに活用できる。",
       url: "https://blog.smisann.net/posts/2026/midi-animator-driver",
+      repoUrl: "https://github.com/SmiSANN/MidiAnimatorDriver",
+      tags: ["Unity", "VRChat", "MIDI"],
     },
   ],
 

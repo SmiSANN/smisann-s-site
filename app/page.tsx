@@ -34,8 +34,8 @@ export default function Home() {
         <main className="lg:w-[60%] lg:py-24 lg:pr-12 lg:pl-8 px-8 py-6">
           <div className="lg:max-w-none space-y-20">
             <AboutSection />
-            <ProductsSection />
             <HobbiesSection />
+            <ProductsSection />
             <BlogSection />
             <EducationSection />
             <Footer />
